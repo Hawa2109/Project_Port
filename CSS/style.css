@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* SECTION ACCUEIL */
+.section-accueil {
+  img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  h1 {
+    font-size: 3rem;
+    /* font-weight: 700; */
+    color: #fffbfb;
+
+    span {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #c11313;
+    }
+  }
+
+  h2 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  h2 > span {
+    position: relative;
+    display: inline-block;
+    color: #c90000;
+    height: 1.4em;
+    vertical-align: bottom;
+    overflow: hidden;
+  }
+  h2 > span > span {
+    display: block;
+    animation: animateWords 5s infinite ease;
+  }
+
+  .text-animee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    color: #f1ebeb;
+    font-family: "Poppins", sans-serif;
+  }
+}
+/*  pour l'animation du texte */
+@keyframes animateWords {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
